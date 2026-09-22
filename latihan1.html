@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Praktikum Z-index</title>
+</head>
+<style>
+	#layer_a {
+		position: absolute;	
+		margin: 20px 150px;
+		height: 200px;
+		width: 200px;
+		background: yellow;
+		z-index: 3;
+	}
+
+	#layer_b {
+		position: absolute;
+		margin: 100px 0;
+		height: 150px;
+		width: 300px;
+		background: lightblue;
+		z-index: 2;
+	}
+
+	#layer_c {
+		position: absolute;
+		margin: 0 20px;
+		height: 200px;
+		width: 400px;
+		background: red;
+		z-index: 1;
+	}
+</style>
+<body>
+	<div id="layer_a">Layer A</div>
+	<div id="layer_b">Layer B</div>
+	<div id="layer_c">Layer C</div>
+</body>
+</html>
